@@ -1,0 +1,274 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="WebApplication1.Hotel.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+
+
+
+#nav {
+    background-color: #FF1654;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    color: #F1FAEE;
+    font-size: 25px;
+    column-width: 5%;
+}
+
+li {
+    display: inline;
+    padding-left: 2px;
+    column-width: 20px;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 20px
+}
+
+li a:hover {
+    background-color: #F3FFBD;
+    color: #FF1654;
+   
+}        .auto-style1 {
+            font-size: xx-large;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .auto-style2 {
+            height: 49px;
+            text-align: right;
+            font-size: 25px;
+               
+        }
+        body {
+    background: url(images/bg.jpg) no-repeat #FFF;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+        .tab1{
+            
+           
+            background-color: #FFFFFF;
+        }
+        .auto-style3 {
+            text-align: center;
+        }
+        .auto-style5 {
+            font-size: large;
+        }
+        
+        .ggh {
+            margin-top:297px;
+  background-color: #ffffff ;
+   
+ 
+  border: 1px solid green ;
+}
+        .auto-style6 {
+            margin-top: 5px;
+            background-color: #FFFFFF;
+            font-size: small;
+        }
+        .auto-style7 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style8 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+        
+   
+.dropbtn {
+  background-color: #FF1654;
+  color: white;
+  padding: 0px;
+  font-size: 26px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FF1654;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropbtn {
+  background-color: #FF1654;
+  color: white;
+  padding: 0px;
+  font-size: 26px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FF1654;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #F3FFBD;
+                           
+}
+
+.dropdown:hover .dropdown-content {display: block;
+                                   
+}
+
+.dropdown:hover .dropbtn {background-color: #F3FFBD;
+   color:#FF1654;                      
+}
+
+       
+
+.dropdown-content a:hover {background-color: #F3FFBD;
+                           
+}
+
+.dropdown:hover .dropdown-content {display: block;
+                                   
+}
+
+.dropdown:hover .dropbtn {background-color: #F3FFBD;
+   color:#FF1654;                      
+}
+
+
+        </style>
+
+</head>
+<body>
+     <nav id="nav">  
+    <ul class="auto-style5">  <p class="auto-style1"><strong>Hotel Booking</strong></p>
+        <div class="auto-style2">
+         <li><a href="Master.aspx">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>  
+        
+            
+            
+            
+            
+            
+            <li>       
+
+                <div class="dropdown">
+ <p class="dropbtn">&nbsp;Book Now</p>
+  <div class="dropdown-content">
+     <a href="admin_login.aspx">Admin Login</a>
+    <a href="registration.aspx">User Registration</a>
+    <a href="login.aspx">User Login</a>
+      
+    
+  </div>
+</div>
+
+            </li>
+            
+
+
+
+
+         
+        <li><a href="contact.aspx">Contact</a>&nbsp;&nbsp;</li>  
+        </div>
+    </ul>  
+</nav>
+    <form id="form1" runat="server">
+        <div class="ggh">
+        <table  class="auto-style6" align="center">
+<tr><td class="auto-style5"><span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+<img src="images/brand.png" class="auto-style8"><span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> <br class="auto-style8">
+<p class="auto-style3"> <strong><span class="auto-style8">Best Rates </span> <br class="auto-style8"> <span class="auto-style8">Guaranteed</span></strong></p>
+
+</td>
+
+<td class="auto-style5"><span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+<img src="images/dollor.jpeg" class="auto-style8"><span class="auto-style8">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br class="auto-style8">
+<p class="auto-style7">  <strong>Pay at  Hotel    </strong>    </p>
+</td>
+
+<td class="auto-style5"><span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+<img src="images/hidden.jpeg" class="auto-style8"><span class="auto-style8">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br class="auto-style8">
+<p class="auto-style3"> <strong><span class="auto-style8">No Hidden</span><br class="auto-style8"> <span class="auto-style8">Charges</span></strong></p>
+</td></tr>
+
+<tr><td class="auto-style5"><span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+<img src="images/best.png" class="auto-style8"><br class="auto-style8">
+<p class="auto-style7"> <strong>Exclusive Offers </strong> </p>
+</td>
+
+<td class="auto-style5"><span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+<img src="images/taj.jpeg" class="auto-style8"><br class="auto-style8">
+<p class="auto-style3"> <strong><span class="auto-style8">Member</span><br class="auto-style8"><span class="auto-style8">Rewards</span></strong><span class="auto-style8"> </span> </p>
+</td>
+
+<td class="auto-style5"><span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+<img src="images/wifi.jpg" class="auto-style8"><br class="auto-style8">
+<p class="auto-style7"> <strong>Wifi Access </strong> </p>
+</td></tr>
+
+</table>
+            </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
